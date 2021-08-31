@@ -13,11 +13,11 @@ async def lego(event):
  else:
      
     if not quew:
-       await event.reply('Provide Some Text To Draw!')
+       await event.reply('Provide ʝαяνυιѕ Some Text To Draw!')
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('ʝαяνυιѕ is creating your logo😌...wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./AmeliaRobot/resources/blackbg.jpg')
@@ -36,7 +36,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
     fname2 = "LogoByYone.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @AmeliaGroup_bot")
+    await tbot.send_file(event.chat_id, fname2, caption="Made By @ADBZ_Managerbot")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
@@ -57,7 +57,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('ʝαяνυιѕ is creating your logo😌...wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./AmeliaRobot/resources/blackbg.jpg')
